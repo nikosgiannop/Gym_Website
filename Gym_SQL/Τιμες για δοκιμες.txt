@@ -1,0 +1,72 @@
+INSERT INTO `gymprograms` (`program_id`, `name`, `description`, `created_at`) VALUES ('1', 'Πιλάτες', 'Ο Joe Pilates, πίστευε ότι η σωματική και ψυχική υγεία είναι αλληλένδετες, γι ‘αυτό και η μέθοδος Pilates, είναι μια σωματική και ψυχική προπόνηση. Η μέθοδος αυτή, επικεντρώνεται στη σωστή ισορροπία , τον έλεγχο, την αναπνοή, τη ροή της κίνησης και τη συγκέντρωση. Συμπεριλαμβάνεται στα ολιστικά προγράμματα εκγύμνασης και αποτελείται από ασκήσεις ακριβείας, οι οποίες επικεντρώνονται στην τεχνική και τον έλεγχο της επανάληψης.\r\n\r\nΟ Pilates, πίστευε ότι ο κορμός, είναι η «δύναμη» του σώματος. Έτσι, υπάρχει μια εστίαση στον κορμό σε κάθε κατηγορία ασκήσεων. Ο κορμός περικλείει τα πάντα, από τον εγκάρσιο κοιλιακό σας, τους μυς της πλάτης, έως τη λεκάνη.', current_timestamp());
+
+INSERT INTO `gymprograms` (`program_id`, `name`, `description`, `created_at`) VALUES ('2', 'Indoor Cycling', 'Το Indoor Cycling είναι πρόγραμμα ομαδικής άσκησης ποδηλάτου σε εσωτερικό χώρο, μοναδικό ως προς την αποτελεσματικότητά του για την επίτευξη στόχων καλής φυσικής κατάστασης και υγείας. Είναι ένα από τα πιο έντονα προγράμματα γυμναστικής και βασίζεται στην χρήση ενός στατικού ποδηλάτου πάντα με την καθοδήγηση εξειδικευμένου Instructor.\r\n\r\nΗ ένταση της προπόνησης μπορεί να αυξηθεί ή να μειωθεί και γι’ αυτό άτομα με διαφορετικό επίπεδο φυσικής κατάστασης μπορούν να γυμνάζονται μαζί. Μπορούν να συμμετέχουν όλοι, από τον αρχάριο έως και τον κορυφαίο αθλητή. Όσο προπονείστε η φυσική σας κατάσταση βελτιώνεται.', current_timestamp());
+
+INSERT INTO `gymprograms` (`program_id`, `name`, `description`, `created_at`) VALUES ('3', 'TRX', 'Πρόκειται για έναν ανθεκτικό ιμάντα με λαβές.\r\nΑποτελεί ένα πολύπλευρο όργανο γυμναστικής, με τεράστια ποικιλία πολυεπίπεδων ασκήσεων (σε τρεις διαστάσεις) λειτουργικής προπόνησης (functional training), οι οποίες πραγματοποιούνται αποκλειστικά και μόνο με το βάρος του σώματος.', current_timestamp());
+
+INSERT INTO `gymprograms` (`program_id`, `name`, `description`, `created_at`) VALUES ('4', 'KICK BOXING', 'Το Kick Boxing είναι ένα δυναμικό, εντυπωσιακό και απαιτητικό άθλημα που συνδυάζει πυγμαχία και λακτίσματα. Κατάγεται από την ταϋλανδέζικη πυγμαχία, με στοιχεία από πολεμικές τέχνες της Ιαπωνίας και της Βορείου Αμερικής, αλλά έχει διαδοθεί σε ολόκληρο τον κόσμο λόγω των οφελών του. Το Kick Boxing προσφέρει εξαιρετική άσκηση, βελτιωμένη φυσική κατάσταση, υψηλή τεχνική κατάρτιση, ικανότητα άμυνας και ευκολία εκμάθησης. Το Kick Boxing είναι πολύ δημοφιλές και ενδείκνυται και για τα δύο φύλα, και για μεγάλο φάσμα ηλικιών και φυσικής κατάστασης.\r\n\r\nΗ προπόνηση στις πολεμικές τέχνες επιφέρει αναρίθμητα σωματικά και πνευματικά οφέλη ζωτικής σημασίας για τα μέλη μας. Κάθε μάθημα πολεμικών τεχνών είναι ικανό να σε συνεπάρει: πρόκειται για έναν αρμονικό συνδυασμό σχεδιασμού, κίνησης και έντασης, που γυμνάζει ολόκληρο το σώμα και ενεργοποιεί το σύνολο των μυών.', current_timestamp());
+
+INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `country`, `city`, `address`, `email`, `username`, `password`, `role`, `created_at`) VALUES ('1', 'admin', 'admin', 'Greece', 'Piraeus', 'Γρ. Λαμπράκη', 'admin@gmail.com', 'admin', 'admin123', 'admin', current_timestamp());
+
+INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `country`, `city`, `address`, `email`, `username`, `password`, `role`, `created_at`) VALUES ('2', 'Nikolaos', 'Giannopoulos', 'Greece', 'Kallithea', 'Ifigenias 70', 'nikosgiannop03@gmail.com', 'NikosGiannop', '123', 'user', current_timestamp());
+
+INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `country`, `city`, `address`, `email`, `username`, `password`, `role`, `created_at`) VALUES ('3', 'Alexia', 'Nastopoulou', 'Greece', 'Kallithea', 'Spartis 41', 'alexianastopoulou@gmail.com', 'AlexiaNast', '12345', 'user', current_timestamp());
+
+INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `country`, `city`, `address`, `email`, `username`, `password`, `role`, `created_at`) VALUES ('4', 'Petros', 'Skiadopoulos', 'Greece', 'Ilion', 'Pafsania 12', 'petrosskiadopoulos@gmail.com', 'PetrosSkiadop', '321', 'user', current_timestamp());
+
+INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `country`, `city`, `address`, `email`, `username`, `password`, `role`, `created_at`) VALUES ('5', 'Anastasis', 'Trainer', 'Greece', 'Koukaki', 'Koukaki 15', 'anasttrainer@gmail.com', 'AnastTrainer', 'Trainer123', 'trainer', current_timestamp());
+
+INSERT INTO `trainers` (`trainer_id`, `first_name`, `last_name`, `expertise`, `created_at`) VALUES ('1', 'Anastasis', 'Kontopoulos', 'Πιλάτες', current_timestamp());
+
+INSERT INTO `trainers` (`trainer_id`, `first_name`, `last_name`, `expertise`, `created_at`) VALUES ('2', 'Giorgos', 'Georgiadis', 'Kick Boxing', current_timestamp());
+
+INSERT INTO `trainers` (`trainer_id`, `first_name`, `last_name`, `expertise`, `created_at`) VALUES ('3', 'Maria ', 'Iakovidou', 'Indoor Cycling', current_timestamp());
+
+INSERT INTO `trainers` (`trainer_id`, `first_name`, `last_name`, `expertise`, `created_at`) VALUES ('4', 'Ioanna', 'Anagnostopoulou', 'TRX', current_timestamp());
+
+INSERT INTO `registrationrequests` (`request_id`, `first_name`, `last_name`, `country`, `city`, `address`, `email`, `username`, `password`, `status`, `created_at`) VALUES ('1', 'Troll', 'Trollolololo', 'Holland', 'Lisse', 'Hahahahahaha', 'troll@gmail.com', 'Troll', '12345', 'PENDING', current_timestamp());
+
+INSERT INTO `registrationrequests` (`request_id`, `first_name`, `last_name`, `country`, `city`, `address`, `email`, `username`, `password`, `status`, `created_at`) VALUES ('2', 'Mixalis', 'Lenopoulos', 'Belgium', 'Bruges', 'Holland street 83', 'mikegeorge@gmail.com', 'MikeGeorge', 'mike123', 'PENDING', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('1', '1', '1', '2025-02-20', '16:00:00', '10', '8', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('2', '1', '1', '2025-02-19', '14:30:00', '10', '3', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('3', '2', '2', '2025-02-28', '16:15:00', '8', '5', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('4', '3', '4', '2025-02-10', '12:00:00', '5', '0', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('6', '4', '2', '2025-02-25', '18:30:00', '15', '7', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('7', '1', '1', '2025-02-21', '18:00:00', '10', '2', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('8', '1', '1', '2025-02-22', '16:00:00', '10', '5', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('9', '1', '1', '2025-02-23', '18:00:00', '10', '0', current_timestamp());
+
+INSERT INTO `programschedules` (`schedule_id`, `program_id`, `trainer_id`, `schedule_date`, `schedule_time`, `max_capacity`, `current_capacity`,  `created_at`) VALUES ('10', '1', '1', '2025-03-1', '18:00:00', '10', '10', current_timestamp());
+
+INSERT INTO `reservations` (`reservation_id`, `user_id`, `schedule_id`, `reservation_date`, `status`) VALUES ('2', '2', '2', current_timestamp(), 'cancelled');
+
+INSERT INTO `reservations` (`reservation_id`, `user_id`, `schedule_id`, `reservation_date`, `status`) VALUES ('1', '2', '1', current_timestamp(), 'active');
+
+INSERT INTO `reservations` (`reservation_id`, `user_id`, `schedule_id`, `reservation_date`, `status`) VALUES ('3', '2', '4', current_timestamp(), 'active');
+
+INSERT INTO `reservations` (`reservation_id`, `user_id`, `schedule_id`, `reservation_date`, `status`) VALUES ('4', '2', '6', current_timestamp(), 'active');
+
+INSERT INTO `reservations` (`reservation_id`, `user_id`, `schedule_id`, `reservation_date`, `status`) VALUES ('5', '3', '1', current_timestamp(), 'active');
+
+INSERT INTO `reservations` (`reservation_id`, `user_id`, `schedule_id`, `reservation_date`, `status`) VALUES ('6', '3', '1', current_timestamp(), 'active');
+
+INSERT INTO `reservations` (`reservation_id`, `user_id`, `schedule_id`, `reservation_date`, `status`) VALUES ('7', '3', '1', current_timestamp(), 'active');
+
+INSERT INTO `announcements` (`announcement_id`, `title`, `content`, `created_at`, `visible`) VALUES ('1', 'Προσφορά Μηνιαίας Συνδρομής', 'Με μεγάλη ευχαρίστηση το γυμναστήριο μας ανακοινώνει ΝΕΑ μεγάλη ΠΡΟΣΦΟΡΆ για την μηνιαία συνδρομή. Για να γιορτάσουμε την ημέρα του Αγίου Βαλεντίνου όλοι μαζί δημιουργήσαμε νέα προσφόρα μηνιαίας συνδρομής μόνο 100€. Μην την χάσετε!\r\nΙσχύει μέχρι 14 Φεβρουαρίου.', current_timestamp(), '1');
+
+INSERT INTO `announcements` (`announcement_id`, `title`, `content`, `created_at`, `visible`) VALUES ('2', 'Ώρες λειτουργίας', 'Σας ανακοινώνουμε πως το γυμναστήριο θα λειτουργεί και τις κυριακές απο τις 9/2/2025 με ωράριο 10 π.μ - 6 μ.μ.', current_timestamp(), '1');
+
+INSERT INTO `announcements` (`announcement_id`, `title`, `content`, `created_at`, `visible`) VALUES ('3', 'Χάσαμε τον πάντελο!', 'Δείχνουμε την μεγάλη θλίψη μας για τον Παντελή Παντελίδη.', current_timestamp(), '0');
+
+INSERT INTO `announcements` (`announcement_id`, `title`, `content`, `created_at`, `visible`) VALUES ('4', 'Καλωσόρισες Ιωάννα!', 'Το γυμναστήριο μας καλωσορίζει την νέα trainer μας, την Ιωάννα, με ειδικότητα στο TRX. Ελάτε να την υποδεχθείτε κάνοντας εγγραφή σε κάποιο πρόγραμμα TRX!', current_timestamp(), '1');
+
+
+

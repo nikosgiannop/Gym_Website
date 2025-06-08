@@ -1,0 +1,81 @@
+<!DOCTYPE html>   <!-- dashboard for public users (NOT logged in) where they can view gym programs and trainers without further information-->
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Γυμναστήριο - Dashboard</title>
+  <link rel="stylesheet" href="dashboardpublic.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <header>
+    Γυμναστήριο - Προγράμματα & Προπονητές
+  </header>
+  <main>
+    <form action="index.php" method="get">
+      <button type="submit" class="back-button">Back to Home</button>
+  </form>
+  </main>
+  <div class="container">
+    <!-- Programs Section -->
+    <div class="section">
+      <h1>Προγράμματα Γυμναστικής</h1>
+      <div id="programsList"></div>
+    </div>
+
+    <!-- Trainers Section -->
+    <div class="section">
+      <h1>Οι Προπονητές μας</h1>
+      <div id="trainersList"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Contact us for more information: <a href="mailto:info@gym.com">info@gym.com</a>
+  </footer>
+
+  <script>
+    $(document).ready(function() {
+      //fetch Programs
+      $.ajax({
+        url: "http://localhost:3000/programs",
+        method: "GET",
+        headers: { "Authorization": localStorage.getItem("token") },
+        success: function(data) {
+          let html = "<ul>";
+          data.forEach(p => {
+            html += `
+              <li class="card">
+                <span class="card-title">${p.name}</span>
+                <p class="card-desc">${p.description}</p>
+              </li>`;
+          });
+          html += "</ul>";
+          $("#programsList").html(html);
+        }
+      });
+
+      //fetch Trainers
+      $.ajax({
+        url: "http://localhost:3000/trainers",
+        method: "GET",
+        headers: { "Authorization": localStorage.getItem("token") },
+        success: function(data) {
+          let html = "<ul>";
+          data.forEach(t => {
+            html += `
+              <li class="card">
+                <span class="card-title">${t.first_name} ${t.last_name}</span>
+                <p class="card-desc">Expertise: ${t.expertise}</p>
+              </li>`;
+          });
+          html += "</ul>";
+          $("#trainersList").html(html);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
